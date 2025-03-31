@@ -1,14 +1,12 @@
 #include <stdio.h>
 #include <string.h>
 
-// Structure to store student details
+
 struct Student {
     int id;
     char name[50];
     float marks;
-};
-
-// Function prototypes
+}
 void addStudent(struct Student students[], int *count);
 void displayStudents(struct Student students[], int count);
 void searchStudent(struct Student students[], int count);
@@ -53,7 +51,7 @@ int main() {
     return 0;
 }
 
-// Function to add a student
+
 void addStudent(struct Student students[], int *count) {
     printf("\nEnter Student ID: ");
     scanf("%d", &students[*count].id);
@@ -66,7 +64,7 @@ void addStudent(struct Student students[], int *count) {
     printf("Student added successfully!\n");
 }
 
-// Function to display all students
+
 void displayStudents(struct Student students[], int count) {
     if (count == 0) {
         printf("\nNo students to display!\n");
@@ -78,7 +76,7 @@ void displayStudents(struct Student students[], int count) {
     }
 }
 
-// Function to search for a student by ID
+// 
 void searchStudent(struct Student students[], int count) {
     int id, found = 0;
     printf("\nEnter Student ID to search: ");
@@ -97,7 +95,7 @@ void searchStudent(struct Student students[], int count) {
     }
 }
 
-// Function to delete a student by ID
+
 void deleteStudent(struct Student students[], int *count) {
     int id, found = 0;
     printf("\nEnter Student ID to delete: ");
