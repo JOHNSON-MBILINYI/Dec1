@@ -17,7 +17,7 @@ int main() {
     int count = 0, choice;
 
     do {
-        // Menu options
+        
         printf("\n--- Student Record System ---\n");
         printf("1. Add Student\n");
         printf("2. Display Students\n");
@@ -56,7 +56,7 @@ void addStudent(struct Student students[], int *count) {
     printf("\nEnter Student ID: ");
     scanf("%d", &students[*count].id);
     printf("Enter Student Name: ");
-    scanf(" %[^\n]", students[*count].name); // To allow spaces in the name
+    scanf(" %[^\n]", students[*count].name):
     printf("Enter Marks: ");
     scanf("%f", &students[*count].marks);
 
