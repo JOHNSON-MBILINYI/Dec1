@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
 struct Student {
     int id;
     char name[50];
