@@ -5,6 +5,7 @@ struct Student {
     char name[50];
     float marks;
 }
+
 void addStudent(struct Student students[], int *count);
 void displayStudents(struct Student students[], int count);
 void searchStudent(struct Student students[], int count);
